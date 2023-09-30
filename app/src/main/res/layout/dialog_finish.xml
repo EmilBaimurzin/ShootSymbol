@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:layout_width="380dp"
+        android:layout_height="360dp"
+        android:background="@drawable/gameover02">
+
+        <TextView
+            android:id="@+id/scores"
+            android:paddingTop="2dp"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            tools:text="2000"
+            style="@style/BasicText"
+            android:layout_width="155dp"
+            android:layout_height="35dp"
+            android:background="@drawable/score02"/>
+
+        <TextView
+            android:id="@+id/best_scores"
+            android:paddingTop="2dp"
+            android:textSize="20sp"
+            android:layout_marginTop="56dp"
+            tools:text="2000"
+            style="@style/BasicText"
+            android:layout_width="155dp"
+            android:layout_height="35dp"
+            android:background="@drawable/score02"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stars"
+        android:src="@drawable/star03"
+        android:adjustViewBounds="true"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.shoot.game.core.library.CustomImageButton
+            android:id="@+id/scoreList"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gameover05"/>
+
+        <com.shoot.game.core.library.CustomImageButton
+            android:id="@+id/menu"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/menu"/>
+
+        <com.shoot.game.core.library.CustomImageButton
+            android:id="@+id/restart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/restart"/>
+
+    </LinearLayout>
+
+</FrameLayout>
